@@ -1,0 +1,82 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: antiquewhite;
+}
+
+img {
+  margin: auto 0;
+}
+
+iframe {
+  margin: 0 auto 30px auto;
+  background-color: #777;
+  display: block;
+  border-style: none;
+}
+
+table {
+  margin: 0 auto;
+  width: 300px;
+  border-collapse: collapse;
+  background-color: azure;
+}
+
+td {
+  border: 2px solid black;
+  padding: 5px;
+}
+
+h1 {
+  text-align: center;
+  margin: auto 0;
+}
+
+h2 {
+  font-size: 14px;
+  text-align: center;
+}
+
+#note {
+  color: red;
+  text-align: center;
+}
+
+nav {
+  margin: 10px 0;
+  display: flex;
+}
+
+nav button {
+  flex: 1;
+  border-radius: 0;
+  height: 50px;
+  border-color: white;
+  background-color: black;
+  color: white;
+}
+
+nav button:hover {
+  background-color: gray;
+}
+
+.fav-game {
+  display: block;
+  margin: 0 auto;
+}
+
+#games-i-made {
+  border-right: 0;
+  border-left: 0;
+}
+
+#favorite-song {
+  border-right: 0;
+}
+
+#golf-img {
+  display: block;
+  margin: 10px auto;
+}
