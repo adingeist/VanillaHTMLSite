@@ -3,6 +3,7 @@
 }
 
 body {
+  padding: 50px;
   background-color: antiquewhite;
 }
 
@@ -31,7 +32,6 @@ td {
 
 h1 {
   text-align: center;
-  margin: auto 0;
 }
 
 h2 {
@@ -79,4 +79,147 @@ nav button:hover {
 #golf-img {
   display: block;
   margin: 10px auto;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.user {
+  margin-left: 1rem;
+}
+
+.img-con {
+  background-color: #eee;
+  padding: 0.5rem 0.7rem;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+
+section .container {
+  width: 450px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(218, 237, 255);
+}
+section .emoji-container,
+.emoji,
+.inner-div {
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+section .emoji-container {
+  width: 80px;
+  height: 80px;
+  margin: 5px;
+  cursor: pointer;
+  position: relative;
+  perspective: 1500px;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+}
+
+
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 99999;
+}
+
+.modal-content button {
+  border: none;
+  background: black;
+  padding: 0.8rem 0.5rem;
+  margin: 1rem 0;
+  font-size: 1.6rem;
+  font-weight: bold;
+  border-radius: 5rem;
+  -webkit-border-radius: 5rem;
+  -moz-border-radius: 5rem;
+  -ms-border-radius: 5rem;
+  -o-border-radius: 5rem;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0px 1rem 1rem rgba(0, 0, 0, 0.671);
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  width: 18rem;
+  color: #fff;
+}
+
+.modal-content button:hover {
+  transform: translateY(-5px);
+}
+
+time {
+  padding-bottom: 1rem;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content button:active {
+  transition: all 0.2s;
+  transform: translateY(3px);
+  -webkit-transform: translateY(3px);
+  -moz-transform: translateY(3px);
+  -ms-transform: translateY(3px);
+  -o-transform: translateY(3px);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+}
+
+.emoji,
+.emoji-container .inner-div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  font-size: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.win .emoji {
+  background: linear-gradient(45deg, rgb(57, 7, 175), rgb(3, 97, 238));
 }
