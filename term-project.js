@@ -8,7 +8,7 @@ const DIRECTION = {
 };
 
 // Score required to beat each round
-const rounds = [3, 3, 3, 3, 2];
+const rounds = [3, 3, 3];
 // Colors from this list are randomly selected
 const colors = [
   '#1abc9c',
@@ -18,11 +18,11 @@ const colors = [
   '#9b59b6',
 ];
 
-const boom = new Audio('boom.mp3');
-const bruh = new Audio('bruh.wav');
-const alarm = new Audio('alarm.wav');
-const bell = new Audio('bell.wav');
-const song = new Audio('coronel-whatsapp.wav');
+const boom = new Audio('sounds/boom.wav');
+const bruh = new Audio('sounds/bruh.wav');
+const alarm = new Audio('sounds/alarm.wav');
+const bell = new Audio('sounds/bell.wav');
+const song = new Audio('sounds/coronel-whatsapp.wav');
 // ***************************
 
 const Ball = {
